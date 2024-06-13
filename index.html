@@ -51,17 +51,17 @@
             them wherever you need, share and collaborate with friends, family
             and co-workers.
           </p>
-          <form class="form-group">
+          <form class="form-group" id="form1">
             <input
-              type="email"
-              id="email"
+              type="text"
+              id="email1"
               placeholder="Enter your email..."
-              required=""
-              oninvalid="this.setCustomValidity('Please check your email')"
-              oninput="this.setCustomValidity('')"
+              
             />
+            <p class="email11-error"></p>
             <button type="submit" id="email-btn">Get Started</button>
           </form>
+          <p class="email1-error"></p>
         </div>
         <div class="hero-image">
           <img id="hero-img" src="assets/images/illustration-1.svg" alt="" />
@@ -137,15 +137,13 @@
             would be happy to help you.
           </p>
         </div>
-        <form class="form-group second">
+        <form class="form-group second" id="form2">
           <input
-            type="email"
-            id="email"
+            type="text"
+            id="email2"
             placeholder="email@example.com"
-            required=""
-            oninvalid="this.setCustomValidity('Please check your email')"
-            oninput="this.setCustomValidity('')"
           />
+          <p class="email2-error"></p>
           <button type="submit" id="email-btn">Get Started For Free</button>
         </form>
       </div>
@@ -220,5 +218,6 @@
         </div>
       </footer>
     </main>
+    <script src="./App.js"></script>
   </body>
 </html>
